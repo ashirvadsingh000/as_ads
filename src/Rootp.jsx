@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App";
-const RootP = () => {
+const Rootp = () => {
   return (
     <BrowserRouter>
       <App />
@@ -9,4 +9,4 @@ const RootP = () => {
   );
 };
 
-export default RootP;
+export default Rootp;

@@ -3,12 +3,12 @@ import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import Header from './components/Header.jsx'
 import './index.css'
-import RootP from './RootP.jsx'
+import Rootp from './Rootp.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
    
-    <RootP/>
+    <Rootp/>
     
   </StrictMode>,
 )
