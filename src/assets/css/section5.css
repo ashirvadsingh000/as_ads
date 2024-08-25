@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    max-width: 1180px;
+    margin: 0 auto;
+  }
+  .flex-container .item-1,
+  .flex-container .item-2,
+  .flex-container .item-3 {
+    padding: 50px 40px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 33%;
+    text-align: center;
+  }
+  .flex-container .item-1 i,
+  .flex-container .item-2 i,
+  .flex-container .item-3 i {
+    font-size: 50px;
+  }
+  .flex-container .item-1 i,
+  .flex-container .item-1 p.subtitle-flex,
+  .flex-container .item-2 i,
+  .flex-container .item-2 p.subtitle-flex,
+  .flex-container .item-3 i,
+  .flex-container .item-3 p.subtitle-flex {
+    color: #707070;
+  }
+  .flex-container .item-1 .middle-text,
+  .flex-container .item-2 .middle-text,
+  .flex-container .item-3 .middle-text {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 20px auto;
+  }
+  .flex-container .item-1 .footer-text,
+  .flex-container .item-2 .footer-text,
+  .flex-container .item-3 .footer-text {
+    color: #949494;
+  }
+  .flex-container .item-1,
+  .flex-container .item-2 {
+    position: relative;
+  }
+  
+  .base-wrap {
+    position: absolute;
+    right: 0;
+    margin-right: -10.5%;
+    top: 47%;
+  }
+  
+  .base {
+    background: white;
+    display: inline-block;
+    height: 20px;
+    margin-left: 20px;
+    margin-top: 5px;
+    position: relative;
+    width: 60px;
+    transform: rotate(90deg);
+    border: 1px solid #444;
+    border-bottom: 1px solid transparent;
+    z-index: 1;
+  }
+  .base:before {
+    border-bottom: 34px solid #444;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    content: "";
+    height: 0;
+    left: -1px;
+    position: absolute;
+    top: -35px;
+    width: 0;
+  }
+  .base:after {
+    border-bottom: 34px solid #fff;
+    border-left: 29px solid transparent;
+    border-right: 29px solid transparent;
+    content: "";
+    height: 0.5px;
+    left: 0px;
+    position: absolute;
+    top: -34px;
+    width: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .flex-container {
+      display: block;
+      width: 300px;
+    }
+    .flex-container .base-wrap {
+      top: auto;
+      bottom: -24px;
+      left: -18%;
+    }
+    .flex-container .base-wrap .base {
+      transform: rotate(180deg);
+    }
+  }
