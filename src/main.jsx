@@ -6,9 +6,7 @@ import './index.css'
 import Rootp from './Rootp.jsx'
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-   
+  <React.StrictMode>
     <Rootp/>
-    
-  </StrictMode>,
+  </React.StrictMode>,
 )

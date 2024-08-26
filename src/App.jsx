@@ -12,8 +12,8 @@ import Footer from "./components/Footer";
 const App = () => {
   return (
     <>
-    <div className=" overflow-x-hidden">
       <Header />
+    <div className=" overflow-x-hidden">
       <Home />
       <Section2/>
       <Section3/>
