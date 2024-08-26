@@ -7,7 +7,7 @@ import Header from './components/Header.jsx'
 import './index.css'
 import Rootp from './Rootp.jsx'
 
-createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Rootp/>
   </React.StrictMode>,
