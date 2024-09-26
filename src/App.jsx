@@ -13,7 +13,6 @@ const App = () => {
   return (
     <>
       <Header />
-    
       <Home />
       <Section2/>
       <Section3/>
@@ -22,8 +21,6 @@ const App = () => {
       <Section6/>
       <Section7/>
       <Section8/>
-
-    
     <Footer/>
     </>
   );
