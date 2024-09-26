@@ -4,7 +4,7 @@ import img6 from '../../public/images/img6.jpg'
 import img7 from '../../public/images/img7.jpg'
 const Section7 = () => {
   return (
-    <div className='w-screen overflow-x-hidden '>
+    <div className=' ' id='Section7'>
       <section className="bg-gray-100 py-20 ">
       <div className="container mx-auto p-4 md:p-6 lg:p-12 justify-center self-center text-center">
         <h2 className="text-4xl lg:text-5xl font-bold mb-4 ">Our Work</h2>

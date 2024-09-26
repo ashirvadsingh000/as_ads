@@ -16,7 +16,7 @@ const Section4 = () => {
   };
   return (
 
-    <div className=" bg-slate-200">
+    <div className=" bg-slate-200 " id='Section4'>
       <div className="container mx-auto p-4 pt-6 md:p-6 lg:p-12 h-screen flex flex-col justify-center">
     <h1 className="text-xl font-bold mb-4 self-center flex justify-center gap-4 text-cyan-600"><FaSlash /> FEATURE POST <FaSlash /></h1>
       <h1 className="text-4xl font-bold mb-4 self-center">Our Post Work</h1>
@@ -43,7 +43,7 @@ const Section4 = () => {
           Prev
         </button>
         <button
-          className="absolute top-1/2 right-4 -translate-y-1/2 bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
+          className="absolute  top-1/2 right-4 -translate-y-1/2 bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded"
           onClick={handleNextClick}
         >
           Next

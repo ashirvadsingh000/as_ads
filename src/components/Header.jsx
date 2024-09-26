@@ -21,6 +21,7 @@ import { SiSpringCreators } from "react-icons/si";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaBookReader } from "react-icons/fa";
 import { MdOutlineClose } from "react-icons/md";
+
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -28,13 +29,10 @@ const Header = () => {
     setIsOpen(!isOpen);
   };
 
-  const scrollToRef = (ref) => {
-    ref.current.scrollIntoView({ behavior: "smooth" });
-  };
   return (
     <>
-      <head className=" flex  flex-col gap-2 fix ">
-        <div className="navbar lg:max-h-16 lg:h-screen bg-white flex  z-50  flex-row justify-between items-center font-poppins italic px-8  fixed w-screen  max-h-16">
+      <header className=" flex  flex-col gap-2 z-50 ">
+        <div className="navbar lg:max-h-16 lg:h-screen bg-white flex  z-50  flex-row justify-between items-center font-poppins italic px-8  sticky top-0  w-screen  max-h-16 shadow-lg">
           <div
             className="navbar_left  cursor-pointer
               "
@@ -51,32 +49,32 @@ const Header = () => {
                   CREATIVITY
                 </li>
               </Link>
-              <Link spy={true} smooth={true} to="Section2">
+              <Link spy={true} smooth={true} to="Section3">
                 <li className="ng hover:underline underline-offset-4 hover:text-cyan-600 hover:text-shadow-lg cursor-pointer hover:font-Berkshire">
                   PORTFOLIO
                 </li>
               </Link>
-              <Link spy={true} smooth={true} to="Section3">
+              <Link spy={true} smooth={true} to="Section4">
                 <li className="ng hover:underline underline-offset-4 hover:text-cyan-600 hover:text-shadow-lg cursor-pointer hover:font-Berkshire">
                   SERVICES
                 </li>
               </Link>
-              <Link spy={true} smooth={true} to="Section4">
+              <Link spy={true} smooth={true} to="Section5">
                 <li className="ng hover:underline underline-offset-4 hover:text-cyan-600 hover:text-shadow-lg cursor-pointer hover:font-Berkshire">
                   PRICING
                 </li>
               </Link>
-              <Link spy={true} smooth={true} to="Section5">
+              <Link spy={true} smooth={true} to="Section6">
                 <li className="ng hover:underline underline-offset-4 hover:text-cyan-600 hover:text-shadow-lg cursor-pointer hover:font-Berkshire">
                   WORK
                 </li>
               </Link>
-              <Link spy={true} smooth={true} to="Section6">
+              <Link spy={true} smooth={true} to="Section7">
                 <li className="ng hover:underline underline-offset-4 hover:text-cyan-600 hover:text-shadow-lg cursor-pointer hover:font-Berkshire">
                   REVIEW
                 </li>
               </Link>
-              <Link spy={true} smooth={true} to="">
+              <Link spy={true} smooth={true} to="Section8">
                 <li className="ng hover:underline underline-offset-4 hover:text-cyan-600 hover:text-shadow-lg cursor-pointer hover:font-Berkshire">
                   BLOG
                 </li>
@@ -92,50 +90,52 @@ const Header = () => {
         </div>
         {isOpen && (
           <>
+          <div  onClick={toggleMenu}  className=" h-screen w-screen fixed bg-cyan-400 opacity-20">
+
+          </div>
+          
             <div
-              onClick={toggleMenu}
-              className="sidebar fixed h-screen w-screen inset-0  z-10 bg-cyan-600  bg-opacity-40"
-            ></div>
-            <div className="  lg:hidden  mt-14 right-1 flex  bg-white bg-opacity-10 backdrop-brightness-0 px-6 rounded-t-xl rounded-b-xl py-2 text-white absolute z-40">
-              <ul className="option flex flex-col  font-semibold h-screen justify-between w-64">
+            
+             className="  lg:hidden  right-0 flex   bg-white border-spacing-1 border border-black shadow-md shadow-current  z-40  px-6 rounded-t-xl rounded-b-xl py-1   fixed ">
+              <ul className="option flex flex-col  font-semibold  h-screen justify-between w-64">
                 <Link spy={true} smooth={true} to="Home">
                   <li className="ng   border-cyan-600 flex gap-3 border-b-2  hover:text-cyan-600 hover:text-shadow-lg cursor-pointer hover:font-Berkshire">
                     <SiSpringCreators /> Creativity
                   </li>
                 </Link>
 
-                <Link spy={true} smooth={true} to="Service">
+                <Link spy={true} smooth={true} to="Section3">
                   <li className="ng   border-cyan-600 flex gap-3 border-b-2  hover:text-cyan-600 hover:text-shadow-lg cursor-pointer hover:font-Berkshire">
                     <FaBookReader /> Portfolio
                   </li>
                 </Link>
 
-                <Link spy={true} smooth={true} to="Skills">
+                <Link spy={true} smooth={true} to="Section4">
                   <li className="ng   border-cyan-600 flex gap-3 border-b-2  hover:text-cyan-600 hover:text-shadow-lg cursor-pointer hover:font-Berkshire">
                     <GrWorkshop /> Services
                   </li>
                 </Link>
 
-                <Link spy={true} smooth={true} to="Education">
+                <Link spy={true} smooth={true} to="Section5">
                   <li className="ng4 border-cyan-600 flex gap-3  border-b-2  hover:text-cyan-600 hover:text-shadow-lg cursor-pointer hover:font-Berkshire">
                     <MdCastForEducation /> Pricing
                   </li>
                 </Link>
 
-                <Link spy={true} smooth={true} to="Project">
+                <Link spy={true} smooth={true} to="Section6">
                   <li className="ng   border-cyan-600 flex gap-3 border-b-2  hover:text-cyan-600 hover:text-shadow-lg cursor-pointer hover:font-Berkshire">
                     <GoProjectSymlink />
                     Work
                   </li>
                 </Link>
-                <Link spy={true} smooth={true} to="hobbies">
+                <Link spy={true} smooth={true} to="Section7">
                   <li className="ng   border-cyan-600 flex gap-3 border-b-2  hover:text-cyan-600 hover:text-shadow-lg cursor-pointer hover:font-Berkshire">
                     <GiBrain />
                     Review
                   </li>
                 </Link>
 
-                <Link spy={true} smooth={true} to="contact">
+                <Link spy={true} smooth={true} to="Section8">
                   <li className="ng   border-cyan-600 flex gap-3 border-b-2  hover:text-cyan-600 hover:text-shadow-lg cursor-pointer hover:font-Berkshire">
                     <FaBlog />
                     Blog
@@ -160,16 +160,36 @@ const Header = () => {
                   </div>
                 </li>
                 <li className=" flex justify-between">
-                  <a href="" className=" border-2 rounded-full p-2 hover:text-cyan-600 hover:border-cyan-600 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300"><FaXTwitter /></a>
-                  <a href="" className=" border-2 rounded-full p-2 hover:text-cyan-600 hover:border-cyan-600 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300"><FaFacebookF/></a>
-                  <a href="" className=" border-2 rounded-full p-2 hover:text-cyan-600 hover:border-cyan-600 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300"><FaPinterestP/></a>
-                  <a href="" className=" border-2 rounded-full p-2 hover:text-cyan-600 hover:border-cyan-600 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300"><FaInstagram/></a>
+                  <a
+                    href=""
+                    className=" border-2 border-black rounded-full p-2 hover:text-cyan-600 hover:border-cyan-600 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300"
+                  >
+                    <FaXTwitter />
+                  </a>
+                  <a
+                    href=""
+                    className=" border-2 border-black rounded-full p-2 hover:text-cyan-600 hover:border-cyan-600 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300"
+                  >
+                    <FaFacebookF />
+                  </a>
+                  <a
+                    href=""
+                    className=" border-2 border-black rounded-full p-2 hover:text-cyan-600 hover:border-cyan-600 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300"
+                  >
+                    <FaPinterestP />
+                  </a>
+                  <a
+                    href=""
+                    className=" border-2 border-black rounded-full p-2 hover:text-cyan-600 hover:border-cyan-600 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300"
+                  >
+                    <FaInstagram />
+                  </a>
                 </li>
               </ul>
             </div>
           </>
         )}
-      </head>
+      </header>
     </>
   );
 };

@@ -4,7 +4,7 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Section2 = () => {
   return (
-<div
+<div id='Section2'
     className="w-full bg-cover bg-center"
     style={{ backgroundImage: `url(${img4})` }}
 >

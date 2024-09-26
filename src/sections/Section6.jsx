@@ -4,7 +4,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import '../assets/css/section6.css'
 const Section6 = () => {
   return (
-  <div className=" bg-slate-200 flex flex-col justify-center h-full">
+  <div id='Section6' className=" bg-slate-200 flex flex-col justify-center h-full">
     <h1 className='mt-24 lg:text-5xl text-4xl font-bold self-center'>Our Plans</h1>
     <section id="pricing-container">
 

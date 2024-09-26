@@ -5,7 +5,7 @@ import logo2 from '../../public/logos/logo2.png'
 import logo3 from '../../public/logos/logo3.png'
 const Section5 = () => {
   return (
-<div className='bg-slate-200 flex flex-col justify-center h-full'>
+<div className='bg-slate-200 flex flex-col justify-center h-full' id='Section5'>
     <h1 className='lg:text-5xl text-4xl self-center mb-3 font-bold'>Our Services </h1>
 <div className="flex-container">
   <div className="item-1">

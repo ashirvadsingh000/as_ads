@@ -4,7 +4,7 @@ import foreground from '../../public/images/img8.svg';
 const Section8 = () => {
   return (
     <div
-      className='bg-slate-800'
+      className='bg-slate-800' id='Section8'
     >
       <div className="flex justify-center items-center h-full">
         <img

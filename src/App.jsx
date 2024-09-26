@@ -13,7 +13,7 @@ const App = () => {
   return (
     <>
       <Header />
-    <div className=" overflow-x-hidden">
+    
       <Home />
       <Section2/>
       <Section3/>
@@ -23,7 +23,7 @@ const App = () => {
       <Section7/>
       <Section8/>
 
-    </div>
+    
     <Footer/>
     </>
   );

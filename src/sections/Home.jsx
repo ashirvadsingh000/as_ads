@@ -4,7 +4,7 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Home = () => {
   return (
-    <div
+    <div id='Home'
       className="h-screen bg-cover bg-center "
       style={{ backgroundImage: `url(${img1})` }}
     >
