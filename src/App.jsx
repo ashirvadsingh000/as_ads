@@ -9,19 +9,21 @@ import Section6 from "./sections/Section6";
 import Section7 from "./sections/Section7";
 import Section8 from "./sections/Section8";
 import Footer from "./components/Footer";
+import Section9 from "./sections/Section9";
 const App = () => {
   return (
     <>
       <Header />
       <Home />
-      <Section2/>
-      <Section3/>
-      <Section4/>
-      <Section5/>
-      <Section6/>
-      <Section7/>
-      <Section8/>
-    <Footer/>
+      <Section2 />
+      <Section3 />
+      <Section4 />
+      <Section5 />
+      <Section6 />
+      <Section7 />
+      <Section8 />
+      <Section9 />
+      <Footer />
     </>
   );
 };

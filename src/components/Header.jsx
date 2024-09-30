@@ -32,7 +32,7 @@ const Header = () => {
   return (
     <>
       <header className=" flex  flex-col gap-2 z-50 ">
-        <div className="navbar lg:max-h-16 lg:h-screen bg-white flex  z-50  flex-row justify-between items-center font-poppins italic px-8  sticky top-0  w-screen  max-h-16 shadow-lg">
+        <div className="navbar lg:max-h-16 lg:h-screen bg-white flex  z-50  flex-row justify-between items-center font-poppins italic px-8  fixed top-0  w-screen  max-h-16 shadow-lg">
           <div
             className="navbar_left  cursor-pointer
               "
@@ -98,6 +98,12 @@ const Header = () => {
             
              className="  lg:hidden  right-0 flex   bg-white border-spacing-1 border border-black shadow-md shadow-current  z-40  px-6 rounded-t-xl rounded-b-xl py-1   fixed ">
               <ul className="option flex flex-col  font-semibold  h-screen justify-between w-64">
+                <Link spy={true} smooth={true} to="Home">
+                  <li className="ng   border-cyan-600 flex gap-3 border-b-2  hover:text-cyan-600 hover:text-shadow-lg cursor-pointer hover:font-Berkshire">
+                    <SiSpringCreators />
+                    </li>
+                </Link>
+
                 <Link spy={true} smooth={true} to="Home">
                   <li className="ng   border-cyan-600 flex gap-3 border-b-2  hover:text-cyan-600 hover:text-shadow-lg cursor-pointer hover:font-Berkshire">
                     <SiSpringCreators /> Creativity
