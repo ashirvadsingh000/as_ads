@@ -43,7 +43,7 @@ const Section8 = () => {
         </div>
 
         <button className="bg-gradient-to-r from-green-400 to-blue-500 text-white py-2 px-6 rounded-full hover:shadow-lg transition-shadow">
-          Get in Touch
+        <a href="tel:+919236361986">Get in Touch</a>
         </button>
       </div>
     </div>
