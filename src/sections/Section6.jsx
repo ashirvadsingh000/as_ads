@@ -36,7 +36,7 @@ const Section6 = () => {
             </div>
             <div class="price-card--price-conditions">
                 <div class="toggle-price-content" data-price-monthly="Billed Monthly" data-price-yearly="Billed Annually">Billed Annually</div>
-                <div class="price-card--onboarding-fee toggle-price-content" data-price-monthly="+ $7,500 Onboarding Fee" data-price-yearly="No Onboarding Fee">No Onboarding Fee</div>
+                <div class="price-card--onboarding-fee toggle-price-content" data-price-monthly="+ 7,500 Onboarding Fee" data-price-yearly="No Onboarding Fee">No Onboarding Fee</div>
             </div>
         </div>
 

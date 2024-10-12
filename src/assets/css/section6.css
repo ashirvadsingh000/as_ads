@@ -225,7 +225,7 @@
 }
 
 #pricing-container .price-card--price-number:before {
-	content: "$";
+	content: "₹";
 	font-size: 24px;
 	top: -16px;
 	display: inline-block;
@@ -318,7 +318,7 @@
 }
 
 #pricing-container .price-card--mobile-features-toggle:after {
-	content: "Show All Features ▾";
+	content: "Get Offer";
 }
 #pricing-container .price-card--mobile-features-toggle.hideall:after {
 	content: "Hide Features ▴";

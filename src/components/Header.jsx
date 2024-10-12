@@ -32,12 +32,14 @@ const Header = () => {
   return (
     <>
       <header className=" flex  flex-col gap-2 z-50 ">
-        <div className="navbar lg:max-h-16 lg:h-screen bg-white flex  z-50  flex-row justify-between items-center font-poppins italic px-8  fixed top-0  w-screen  max-h-16 shadow-lg">
+        <div className="navbar lg:max-h-16  bg-white flex  z-50  flex-row justify-between items-center font-poppins italic px-8  fixed top-0  w-screen  max-h-16 shadow-lg h-12 lg:h-14 " >
           <div
-            className="navbar_left  cursor-pointer
+            className="navbar_left  cursor-pointer justify-center
               "
           >
-            <img className=" h-12 lg:h-14 p-1" src={logo} alt="" />
+           <h2 className=" p-1  font-poppins  font-bold self-center">
+           <span className=" text-blue-500">ALL SOLUTION </span>DIGITAL MEDIA
+           </h2>
           </div>
           <div className="navbar_right hidden lg:flex">
             <ul className="option flex flex-row gap-x-8  font-semibold ">
